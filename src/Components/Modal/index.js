@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
-import { HeaderForm, TitleAccount } from "./style";
+import { HeaderForm, TitleAccount, FormProperty } from "./style";
 import { LogoSquad } from "../../assets/images/index";
 
 Modal.setAppElement(document.getElementById("root"));
@@ -28,10 +28,13 @@ function FormModal() {
         <HeaderForm>
           <img src={LogoSquad} alt="Logo Squad" />
         </HeaderForm>
-        <form className="form">
-          <div className="form-group">
-            <TitleAccount>ABRIR SUA CONTA É SIMPLES</TitleAccount>
-            <h2> Preencha os dados abaixo e siga as próximas instruções </h2>
+        <FormProperty>
+          <TitleAccount>ABRIR SUA CONTA É SIMPLES</TitleAccount>
+          <span className="subtitle">
+            {" "}
+            Preencha os dados abaixo e siga as próximas instruções{" "}
+          </span>
+          <div className="fields">
             <label htmlFor="exampleInputEmail1">
               Nome* <br />
             </label>
@@ -40,11 +43,7 @@ function FormModal() {
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter email"
             />
-            {/* <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> */}
-          </div>
-          <div className="form-group">
             <label htmlFor="exampleInputPassword1">
               Email* <br />
             </label>
@@ -52,10 +51,7 @@ function FormModal() {
               type="password"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Password"
             />
-          </div>
-          <div className="form-group">
             <label htmlFor="exampleInputPassword1">
               Telefone* <br />
             </label>
@@ -63,22 +59,18 @@ function FormModal() {
               type="password"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Password"
             />
-          </div>
-          <div className="form-group">
             <label htmlFor="exampleInputPassword1">
-              Qual a sua faixa de patrimônio* <br />
+              Qual a sua faixa de patrimônio? <br />
             </label>
             <input
               type="password"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Password"
             />
           </div>
-          <div className="form-check" />
-        </form>
+          <button type="submit">Próximo Passo</button>
+        </FormProperty>
       </Modal>
     </>
   );

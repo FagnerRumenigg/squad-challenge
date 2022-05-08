@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import { HeaderForm, TitleAccount, FormProperty } from "./style";
-import { LogoSquad } from "../../assets/images/index";
+import { LogoSquad } from "../../assets/images";
 import Buttom from "../Button";
 
 Modal.setAppElement(document.getElementById("root"));

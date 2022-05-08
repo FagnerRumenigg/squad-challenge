@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/squad-challenge/static/css/main.0e296f0f.css",
-    "main.js": "/squad-challenge/static/js/main.793fbef7.js",
-    "static/media/logo.svg": "/squad-challenge/static/media/logo.f09dbe443223e9807979eb4b96b7ef31.svg",
+    "main.js": "/squad-challenge/static/js/main.a199475b.js",
+    "static/media/logo.svg": "/squad-challenge/static/media/logo.196353901d07e01effbda425e3975a79.svg",
     "index.html": "/squad-challenge/index.html",
     "main.0e296f0f.css.map": "/squad-challenge/static/css/main.0e296f0f.css.map",
-    "main.793fbef7.js.map": "/squad-challenge/static/js/main.793fbef7.js.map"
+    "main.a199475b.js.map": "/squad-challenge/static/js/main.a199475b.js.map"
   },
   "entrypoints": [
     "static/css/main.0e296f0f.css",
-    "static/js/main.793fbef7.js"
+    "static/js/main.a199475b.js"
   ]
 }

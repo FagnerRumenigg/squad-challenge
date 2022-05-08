@@ -1,8 +1,8 @@
 import "./App.css";
-import Modal from "./Components/Modal/index";
+import Home from "./Pages/Home";
 
 function App() {
-  return <Modal />;
+  return <Home />;
 }
 
 export default App;

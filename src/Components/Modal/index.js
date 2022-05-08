@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import { HeaderForm, TitleAccount, FormProperty } from "./style";
 import { LogoSquad } from "../../assets/images/index";
+import Buttom from "../Button";
 
 Modal.setAppElement(document.getElementById("root"));
 
@@ -18,7 +19,7 @@ function FormModal() {
 
   return (
     <>
-      <button onClick={openModal}>Open Modal</button>
+      <Buttom action={openModal} name="Abra sua conta" />
       <Modal
         style={{ content: { height: "677px", width: "521px", padding: 0 } }}
         isOpen={modalIsOpen}

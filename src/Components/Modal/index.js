@@ -32,7 +32,6 @@ function FormModal() {
         <FormProperty>
           <TitleAccount>ABRIR SUA CONTA É SIMPLES</TitleAccount>
           <span className="subtitle">
-            {" "}
             Preencha os dados abaixo e siga as próximas instruções{" "}
           </span>
           <div className="fields">

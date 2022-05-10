@@ -19,7 +19,11 @@ function FormModal() {
 
   return (
     <>
-      <Buttom action={openModal} name="Abra sua conta" />
+      <Buttom
+        action={openModal}
+        style={{ position: "absolute", top: "487px", left: "233px" }}
+        name="Abra sua conta"
+      />
       <Modal
         style={{ content: { height: "677px", width: "521px", padding: 0 } }}
         isOpen={modalIsOpen}

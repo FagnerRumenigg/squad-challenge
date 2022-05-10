@@ -6,18 +6,8 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     height: 712px;
-    background-image: url("background.png");
+    /* background-image: url("images/background.png"); */
     background-repeat: no-repeat;
-  }
-
-  #blueBox {
-    width: 1440px;
-    height: 259px;
-    background-image: url("blueBackground.png");
-  }
-
-  #openQuotImg {
-    margin-left: 193px;
   }
 
   #textAndButtom {
@@ -26,72 +16,115 @@ export const Container = styled.div`
     flex-direction: column;
     width: 1440px;
     height: 819px;
-    background-image: url("textBoxBackground.png");
+    background-image: url("images/textBoxBackground.png");
+    /* background: blue; */
     background-repeat: no-repeat;
   }
-`;
 
-export const Risks = styled.div`
-  height: ${(props) => props.height};
-  border-left: 3px solid #3b52a1;
-  margin-bottom: 20px;
-`;
-
-export const HalfForm = styled.div`
-  display: flex;
-  align-items: center;
-
-  #halfLeft {
+  #textAndButtomWithIcon {
     display: flex;
-    align-items: center;
-    width: 720px;
-    height: 667px;
-    background-image: url("formBackground.png");
-    background-repeat: no-repeat;
+    width: 1440px;
+    background-image: url("images/textBoxBackground.png");
 
-    #halfLeftText {
-      width: 366px;
-      color: #fff;
-      margin-left: 194px;
+    #sqTextBoxOne {
+      margin-top: 339px;
+    }
 
-      #upperText {
-        font-family: "Gotham Bold";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 30px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #fff;
-        color: #000;
-      }
+    #sqTextBoxTwo {
+      margin-bottom: 464px;
     }
   }
 `;
 
-export const SecondBlueBox = styled.div`
+export const BlueBox = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
   width: 1440px;
-  height: 284px;
-  background-image: url("blueBackground.png");
-  font-family: "Gotham Book";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
+  height: 259px;
+  background-image: url("images/blueBackground.png");
+
+  #textBlueBox {
+    width: 482px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    margin-left: 776px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-image: url("images/blueBackground.png");
+    color: #3b52a1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+`;
+
+export const TopHeader = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  background-color: #373537;
+  height: 20px;
+  width: 1440px;
   color: #fff;
+  font-size: 12px;
+  margin-right: 80px;
+  z-index: 1000;
 
-  #textDiv {
-    margin-left: 278px;
-    width: 340px;
-    height: 140px;
+  span {
+    margin-right: 187px;
   }
 
-  #clientOliveira {
-    margin-right: 342px;
+  #creditCard {
+    width: 16px;
+    margin-right: 8px;
+    margin-bottom: 2px;
   }
+`;
+
+export const Header = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  background: transparent;
+  margin-bottom: 100px;
+  height: 80px;
+  z-index: 1000;
+  top: 20px;
+
+  a {
+    text-decoration: none;
+    color: white;
+    width: content;
+    height: 29px;
+    padding: 0px 11px;
+
+    &:hover {
+      background: #aa8c3c;
+      border-radius: 22.5px;
+    }
+  }
+
+  img {
+    margin-right: 67.5px;
+    width: 201px;
+    height: 47px;
+  }
+
+  span {
+    margin: 0 19px 10px 19px;
+    color: #aa8c3c;
+  }
+`;
+
+export const VideoBox = styled.div`
+  margin: 673px 730px 787px 110px;
+  position: absolute;
+  width: 522px;
+  height: 330px;
+  background-image: url("images/videoImage.png");
+  background-repeat: no-repeat;
+  border: 3px solid #3b52a1;
 `;
 
 export const TextBox = styled.div`
@@ -130,7 +163,7 @@ export const EndTextBox = styled.div`
   flex-direction: Column;
   width: 1440px;
   height: 300px;
-  background-image: url("textBoxBackground.png");
+  background-image: url("images/textBoxBackground.png");
   background-repeat: no-repeat;
 
   p {
@@ -149,66 +182,170 @@ export const OurTeam = styled.div`
   height: 795px;
 `;
 
-export const VideoBox = styled.div`
-  margin: 673px 730px 787px 110px;
-  position: absolute;
-  width: 522px;
-  height: 330px;
-  background-image: url("videoImage.png");
-  background-repeat: no-repeat;
-  border: 3px solid #3b52a1;
-`;
-
-export const TopHeader = styled.div`
-  text-align: end;
-  background-color: #373537;
-  height: 20px;
-  width: 100vw;
-  color: #fff;
-  font-size: 12px;
-
-  span {
-    margin-right: 187px;
-  }
-`;
-
-export const Header = styled.header`
+export const SecondBlueBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
-  margin-bottom: 100px;
-  height: 80px;
+  width: 1440px;
+  height: 284px;
+  background-image: url("images/blueBackground.png");
+  font-family: "Gotham Book";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
 
-  a {
-    text-decoration: none;
-    color: white;
-    width: content;
-    height: 29px;
-    padding: 0px 11px;
+  #textWithQuot {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 278px;
+    width: 500px;
 
-    &:hover {
-      background: #aa8c3c;
-      border-radius: 22.5px;
+    #textDiv {
+      width: 340px;
+      text-align: center;
+    }
+
+    #openQuotImg {
+      margin-bottom: 82px;
+    }
+
+    #closeQuotImg {
+      margin-top: 77px;
     }
   }
 
-  img {
-    margin-right: 67.5px;
-    width: 201px;
-    height: 47px;
-  }
-
-  span {
-    margin: 0 19px 10px 19px;
-    color: #aa8c3c;
+  #clientOliveira {
+    margin-right: 342px;
+    margin-bottom: 30px;
   }
 `;
 
-export const PopUpDiv = styled.div`
-  width: 518px;
-  height: 495px;
-  background: #3b52a1;
-  opacity: 0.4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+export const HalfForm = styled.div`
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  background: #373537;
+  color: #fff;
+
+  #halfLeft {
+    display: flex;
+    align-items: center;
+    width: 709px;
+    height: 666px;
+    background-image: url("images/formBackground.png");
+
+    #halfLeftText {
+      width: 366px;
+      color: #fff;
+      margin-left: 194px;
+
+      #upperText {
+        font-family: "Gotham Bold";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        color: #000;
+      }
+    }
+  }
+`;
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  height: 757px;
+  width: 1440px;
+`;
+
+export const BlueFooter = styled.div`
+  display: flex;
+  justify-content: space-between;
+  height: 478px;
+  background-color: #3b52a1;
+
+  #blueFooterText {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 23px;
+    color: #fff;
+
+    #blueFooterUpperText {
+      display: flex;
+
+      li {
+        list-style-type: none;
+      }
+    }
+
+    #blueFooterBottomText {
+      width: 870px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #iconsBox {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  #sqFooterOneId {
+    margin-top: 153px;
+  }
+
+  #sqFooterTwoId {
+    margin-bottom: 216px;
+  }
+`;
+
+export const BlackFooter = styled.div`
+  height: 279px;
+  display: flex;
+  align-items: center;
+  background: #373537;
+  color: #fff;
+  justify-content: flex-end;
+
+  span {
+    width: 1059px;
+    font-family: "Arial";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    color: #ffffff;
+  }
+
+  #bgWppIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: #25d366;
+    margin: 0px 54px 144px 57px;
+  }
+`;
+
+export const Risks = styled.div`
+  height: ${(props) => props.height};
+  border-left: 3px solid #3b52a1;
+  margin-bottom: 20px;
+  /* margin-top: 0px; */
 `;

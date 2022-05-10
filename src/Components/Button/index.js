@@ -1,8 +1,13 @@
 // import { useState } from "react";
 import { ButtonStyle } from "./style";
 
-function Button({ name, action }) {
-  return <ButtonStyle onClick={action}>{name}</ButtonStyle>;
+function Button({ name, action, style }) {
+  console.log(style);
+  return (
+    <ButtonStyle style={style} onClick={action}>
+      {name}
+    </ButtonStyle>
+  );
 }
 
 export default Button;

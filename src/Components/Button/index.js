@@ -2,7 +2,6 @@
 import { ButtonStyle } from "./style";
 
 function Button({ name, action, style }) {
-  console.log(style);
   return (
     <ButtonStyle style={style} onClick={action}>
       {name}

@@ -6,8 +6,81 @@ export const Container = styled.div`
     align-items: center;
     flex-direction: column;
     height: 712px;
-    /* background-image: url("images/background.png"); */
     background-repeat: no-repeat;
+
+    #insideModalDiv {
+      position: absolute;
+      width: 503px;
+      left: 229px;
+      top: 237px;
+      z-index: 1001;
+      color: #fff;
+
+      span {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 50px;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+      }
+
+      p {
+        width: 456px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: #fff;
+      }
+    }
+
+    section.awSlider .carousel {
+      display: table;
+      z-index: 2;
+      -moz-box-shadow: 0 0 4px #444;
+      -webkit-box-shadow: 0 0 4px #444;
+      box-shadow: 0 0 15px rgba(1, 1, 1, 0.5);
+    }
+
+    section.awSlider {
+      margin: 30px auto;
+      padding: 30px;
+      position: relative;
+      display: table;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    section.awSlider:hover > img {
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    section.awSlider img {
+      pointer-events: none;
+    }
+
+    section.awSlider > img {
+      position: absolute;
+      top: 30px;
+      z-index: 1;
+      transition: all 0.3s;
+      filter: blur(1.8vw);
+      -webkit-filter: blur(2vw);
+      -moz-filter: blur(2vw);
+      -o-filter: blur(2vw);
+      -ms-filter: blur(2vw);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
   }
 
   #textAndButtom {
@@ -17,7 +90,6 @@ export const Container = styled.div`
     width: 1440px;
     height: 819px;
     background-image: url("images/textBoxBackground.png");
-    /* background: blue; */
     background-repeat: no-repeat;
   }
 
@@ -115,6 +187,16 @@ export const Header = styled.header`
     margin: 0 19px 10px 19px;
     color: #aa8c3c;
   }
+`;
+
+export const ModalDiv = styled.div`
+  position: absolute;
+  width: 518px;
+  height: 495px;
+  left: 191px;
+  top: 236px;
+  background-image: url("images/opacityBackground.png");
+  mix-blend-mode: overlay;
 `;
 
 export const VideoBox = styled.div`
@@ -345,7 +427,7 @@ export const BlackFooter = styled.div`
 
 export const Risks = styled.div`
   height: ${(props) => props.height};
-  border-left: 3px solid #3b52a1;
+  border-left: 3px solid ${(props) => props.colorBorder || "#3b52a1"};
   margin-bottom: 20px;
   /* margin-top: 0px; */
 `;

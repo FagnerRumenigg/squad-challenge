@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const HeaderForm = styled.header`
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color: #3b52a1;
   align-items: center;
   display: flex;
   justify-content: center;
+  z-index: 2000;
 `;
 
 export const TitleAccount = styled.span`
@@ -17,6 +18,7 @@ export const TitleAccount = styled.span`
   color: #fff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #3b52a1;
+  z-index: 2001;
 `;
 
 export const FormProperty = styled.form`
@@ -25,6 +27,7 @@ export const FormProperty = styled.form`
   flex-direction: column;
   justify-content: space-evenly;
   height: 568px;
+  z-index: 2002;
 
   .subtitle {
     width: 339px;

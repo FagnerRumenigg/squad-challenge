@@ -1,5 +1,4 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import { Carousel } from "react-carousel-minimal";
 import Modal from "../../Components/Modal";
 import Buttom from "../../Components/Button";
 import SecondForm from "../../Components/Form";
@@ -18,6 +17,7 @@ import {
   BlackFooter,
   BlueBox,
   Risks,
+  ModalDiv,
 } from "./style";
 import {
   LogoHeader,
@@ -36,12 +36,27 @@ import {
   SqTextBoxOne,
   SqTextBoxTwo,
   CreditCard,
-  Background,
-  TestOne,
-  TestTwo,
+  // Background,
+  // TestOne,
+  // TestTwo,
 } from "../../assets/images";
 
 function Home() {
+  const data = [
+    {
+      image: "/images/background.png",
+    },
+    {
+      image: "/images/background.png",
+    },
+    {
+      image: "/images/background.png",
+    },
+    {
+      image: "/images/background.png",
+    },
+  ];
+
   return (
     <Container>
       <div id="allStuffs">
@@ -58,18 +73,36 @@ function Home() {
           <a href="#faq">FAQ</a> <span> | </span>
           <a href="#contato">CONTATO</a>
         </Header>
-        <Carousel showThumbs={false}>
-          <div>
-            <img src={Background} height="712px" alt="Credit Cart" />
-          </div>
-          <div>
-            <img src={TestOne} height="712px" alt="Credit Cart" />
-          </div>
-          <div>
-            <img src={TestTwo} height="712px" alt="Credit Cart" />
-          </div>
-        </Carousel>
-        <Modal />
+        <Carousel
+          data={data}
+          time={20000}
+          width="1440px"
+          height="712px"
+          automatic={true}
+          dots={true}
+          pauseIconColor="white"
+          pauseIconSize="40px"
+          slideBackgroundColor="darkgrey"
+          slideImageFit="cover"
+          style={{
+            position: "absolute",
+            width: "1440px",
+            height: "712px",
+            left: "0px",
+          }}
+        />
+        <div id="insideModalDiv">
+          <Risks height="52px" colorBorder="#fff">
+            <p />
+          </Risks>
+          <span>#OTIMECERTO MUDAOJOGO</span>
+          <p>
+            Esqueça tudo que você já ouviu sobre assessorias financeiras. Chegou
+            a Squad Capital!
+          </p>
+          <Modal />
+        </div>
+        <ModalDiv />
         <VideoBox />
       </div>
       <BlueBox>

@@ -17,7 +17,21 @@ code {
     monospace;
 }
 
+/* 
+.carousel-container {
+  margin-left: -10px !important;
+  padding: -10px !important;
+} */
 
-.thumbs-wrapper{
-	/* display: none; */
+.dots {
+  text-align: right !important;
+  margin-bottom: 77px !important;
+  right: 49px !important;
+}
+
+.dot {
+  border-radius: 0 !important;
+  margin-left: 10px !important;
+  width: 27px !important;
+  height: 3px !important;
 }

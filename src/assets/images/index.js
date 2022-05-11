@@ -15,6 +15,5 @@ export { default as WppIcon } from "./wppIcon.svg";
 export { default as SqTextBoxOne } from "./sqTextBoxOne.png";
 export { default as SqTextBoxTwo } from "./sqTextBoxTwo.png";
 export { default as CreditCard } from "./creditCard.svg";
-export { default as Background } from "./background.png";
 export { default as TestOne } from "./testOne.jpg";
 export { default as TestTwo } from "./testTwo.jpg";

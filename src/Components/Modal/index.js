@@ -29,7 +29,6 @@ function FormModal() {
             top: "10%",
             left: "50%",
             right: "auto",
-            // bottom: "auto",
           },
         }}
         isOpen={modalIsOpen}

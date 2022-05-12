@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonStyle = styled.button`
-  position: ${(props) => props.position};
   width: ${(props) => props.width || "176px"};
   height: 45px;
   top: ${(props) => props.top};

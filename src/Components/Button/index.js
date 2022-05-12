@@ -1,9 +1,8 @@
-// import { useState } from "react";
 import { ButtonStyle } from "./style";
 
-function Button({ name, action, style }) {
+function Button({ id, name, action, style }) {
   return (
-    <ButtonStyle style={style} onClick={action}>
+    <ButtonStyle id={id} style={style} onClick={action}>
       {name}
     </ButtonStyle>
   );

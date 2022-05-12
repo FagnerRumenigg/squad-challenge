@@ -13,7 +13,7 @@ export const Container = styled.div`
       width: 503px;
       left: 229px;
       top: 237px;
-      z-index: 1001;
+      z-index: 1005;
       color: #fff;
 
       span {
@@ -205,8 +205,10 @@ export const VideoBox = styled.div`
   width: 522px;
   height: 330px;
   background-image: url("images/videoImage.png");
+
   background-repeat: no-repeat;
   border: 3px solid #3b52a1;
+  z-index: 2000;
 `;
 
 export const TextBox = styled.div`
@@ -257,11 +259,73 @@ export const EndTextBox = styled.div`
     text-align: center;
     color: #fff;
   }
+
+  span {
+    margin-top: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
 `;
 
 export const OurTeam = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1440px;
-  height: 795px;
+  height: 900px;
+  background-color: #f7f6f6;
+
+  p {
+    width: 832px;
+    height: 52px;
+    font-family: "Gotham Medium";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #373537;
+  }
+
+  span {
+    margin-top: 150px;
+    font-weight: 800;
+    font-size: 40px;
+    color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3b52a1;
+  }
+
+  #carouselEmployee {
+    display: flex;
+    height: 500px;
+    margin-bottom: 50px;
+    animation: all 30s linear infinite;
+
+    @keyframes all {
+      from {
+        margin-left: 1200px;
+      }
+      to {
+        margin-left: -1200px;
+      }
+    }
+  }
+
+  #imageInfo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+
+  #riskAndImage {
+    display: flex;
+    align-items: center;
+    height: 350px;
+  }
 `;
 
 export const SecondBlueBox = styled.div`
@@ -428,6 +492,46 @@ export const BlackFooter = styled.div`
 export const Risks = styled.div`
   height: ${(props) => props.height};
   border-left: 3px solid ${(props) => props.colorBorder || "#3b52a1"};
-  margin-bottom: 20px;
-  /* margin-top: 0px; */
+  margin-bottom: ${(props) => props.marginBottom || "20px"};
+  margin-top: ${(props) => props.marginTop};
+`;
+
+export const WhiteBox = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1100px;
+  height: 201px;
+  top: 1703px;
+  left: 170px;
+
+  .whiteBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 250px;
+    height: 151px;
+    background-color: #fff;
+
+    span {
+      color: #3b52a1;
+      font-family: "Gotham Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      width: 167px;
+    }
+
+    text {
+      font-family: "Gotham Bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      text-transform: uppercase;
+      color: #373537;
+    }
+  }
 `;

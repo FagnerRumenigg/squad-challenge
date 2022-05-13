@@ -17,12 +17,6 @@ code {
     monospace;
 }
 
-/* 
-.carousel-container {
-  margin-left: -10px !important;
-  padding: -10px !important;
-} */
-
 .dots {
   text-align: right !important;
   margin-bottom: 77px !important;
@@ -34,4 +28,8 @@ code {
   margin-left: 10px !important;
   width: 27px !important;
   height: 3px !important;
+}
+
+.ReactModalPortal > .ReactModal__Overlay > .ReactModal__Overlay--after-open{
+  z-index: 3000;
 }

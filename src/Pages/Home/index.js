@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Modal from "../../Components/Modal";
 import Buttom from "../../Components/Button";
@@ -6,6 +7,9 @@ import * as Styles from "./style";
 import * as Images from "../../assets/images";
 
 function Home() {
+  // const [openModal, setOpenModal] = useState(false);
+  useEffect(() => {});
+
   const data = [
     {
       image: "/images/background.png",

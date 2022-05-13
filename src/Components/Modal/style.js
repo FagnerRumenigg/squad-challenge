@@ -7,7 +7,10 @@ export const HeaderForm = styled.header`
   align-items: center;
   display: flex;
   justify-content: center;
-  z-index: 2000;
+
+  .ReactModal__Overlay {
+    z-index: 3000 !important;
+  }
 `;
 
 export const TitleAccount = styled.span`
@@ -18,16 +21,14 @@ export const TitleAccount = styled.span`
   color: #fff;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #3b52a1;
-  z-index: 2001;
 `;
 
-export const FormProperty = styled.form`
+export const FormProperty = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   height: 568px;
-  z-index: 2002;
 
   .subtitle {
     width: 339px;

@@ -1,8 +1,8 @@
 import { ButtonStyle } from "./style";
 
-function Button({ id, name, action, style }) {
+function Button({ id, type, name, action, style }) {
   return (
-    <ButtonStyle id={id} style={style} onClick={action}>
+    <ButtonStyle id={id} type={type} style={style} onClick={action}>
       {name}
     </ButtonStyle>
   );

@@ -1,14 +1,28 @@
 {
   "files": {
-    "main.css": "/squad-challenge/static/css/main.be725362.css",
-    "main.js": "/squad-challenge/static/js/main.9ec0c88f.js",
+    "main.css": "/squad-challenge/static/css/main.1bfc02a4.css",
+    "main.js": "/squad-challenge/static/js/main.bde55876.js",
+    "static/media/testTwo.jpg": "/squad-challenge/static/media/testTwo.f4932eda32513c0f2ab7.jpg",
+    "static/media/testOne.jpg": "/squad-challenge/static/media/testOne.f51d43c96afd7852a2e1.jpg",
     "static/media/logo.svg": "/squad-challenge/static/media/logo.196353901d07e01effbda425e3975a79.svg",
+    "static/media/logoHeader.svg": "/squad-challenge/static/media/logoHeader.a442990e170661d690c29e189ed06561.svg",
+    "static/media/sqIcon.svg": "/squad-challenge/static/media/sqIcon.a27ad46d9112162ca868f7e790b63af9.svg",
+    "static/media/moneyIcon.svg": "/squad-challenge/static/media/moneyIcon.4b42002ca1ebb2bc7619c27d3bab5e75.svg",
+    "static/media/wppIcon.svg": "/squad-challenge/static/media/wppIcon.7245a9501d2d45e54a565706aa264655.svg",
+    "static/media/twitterIcon.svg": "/squad-challenge/static/media/twitterIcon.1b75813bb7dfc5bd3275aafb69ab2adc.svg",
+    "static/media/googleIcon.svg": "/squad-challenge/static/media/googleIcon.321a7970abe29ab1971d9ac31c08fadc.svg",
+    "static/media/creditCard.svg": "/squad-challenge/static/media/creditCard.258a9b541110147da608b4c8fbd99594.svg",
+    "static/media/instagramIcon.svg": "/squad-challenge/static/media/instagramIcon.6e2c3ce9007a0031d100bb2083e54bb3.svg",
+    "static/media/indeSignIcon.svg": "/squad-challenge/static/media/indeSignIcon.34cb13fff9a9ecc05a2ac0bcbc08adc9.svg",
     "index.html": "/squad-challenge/index.html",
-    "main.be725362.css.map": "/squad-challenge/static/css/main.be725362.css.map",
-    "main.9ec0c88f.js.map": "/squad-challenge/static/js/main.9ec0c88f.js.map"
+    "static/media/facebookIcon.svg": "/squad-challenge/static/media/facebookIcon.e2a1c0e64114533f7fed9f0ae778e64d.svg",
+    "static/media/closeQuot.svg": "/squad-challenge/static/media/closeQuot.55a08c0c1856bce4d1f0446e55d9b8dc.svg",
+    "static/media/openQuot.svg": "/squad-challenge/static/media/openQuot.12ded8b50bdf43d026df27dfd11de662.svg",
+    "main.1bfc02a4.css.map": "/squad-challenge/static/css/main.1bfc02a4.css.map",
+    "main.bde55876.js.map": "/squad-challenge/static/js/main.bde55876.js.map"
   },
   "entrypoints": [
-    "static/css/main.be725362.css",
-    "static/js/main.9ec0c88f.js"
+    "static/css/main.1bfc02a4.css",
+    "static/js/main.bde55876.js"
   ]
 }

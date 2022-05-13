@@ -1,3 +1,8 @@
+* {
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.dots {
+  text-align: right !important;
+  margin-bottom: 77px !important;
+  right: 49px !important;
+}
+
+.dot {
+  border-radius: 0 !important;
+  margin-left: 10px !important;
+  width: 27px !important;
+  height: 3px !important;
+}
+
+.ReactModalPortal > .ReactModal__Overlay > .ReactModal__Overlay--after-open{
+  z-index: 3000;
 }

@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 export const HeaderForm = styled.header`
   width: 100%;
-  height: 109px;
+  height: 90px;
   background-color: #3b52a1;
   align-items: center;
   display: flex;
   justify-content: center;
+
+  .ReactModal__Overlay {
+    z-index: 3000 !important;
+  }
 `;
 
 export const TitleAccount = styled.span`
   font-weight: 800;
   font-size: 30px;
-  line-height: 35px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -20,7 +23,7 @@ export const TitleAccount = styled.span`
   -webkit-text-stroke-color: #3b52a1;
 `;
 
-export const FormProperty = styled.form`
+export const FormProperty = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,6 +50,8 @@ export const FormProperty = styled.form`
     height: 40px;
     border: 2px solid #b8b8b8;
     border-radius: 74px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   button {

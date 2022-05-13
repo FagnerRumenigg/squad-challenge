@@ -12,87 +12,87 @@ function Home() {
 
   const data = [
     {
-      image: "/images/background.png",
+      image: "/squad-challenge/images/background.png",
     },
     {
-      image: "/images/background.png",
+      image: "/squad-challenge/images/background.png",
     },
     {
-      image: "/images/background.png",
+      image: "/squad-challenge/images/background.png",
     },
     {
-      image: "/images/background.png",
+      image: "/squad-challenge/images/background.png",
     },
   ];
 
   const employeeData = [
     {
-      image: "/images/carouselImages/pictureOne.png",
+      image: "/squad-challenge/images/carouselImages/pictureOne.png",
       title: "Alessandra Moreira",
       subTitle: "AAI | CFPº | CFA LVL III Candidate",
     },
     {
-      image: "/images/carouselImages/pictureTwo.png",
+      image: "/squad-challenge/images/carouselImages/pictureTwo.png",
       title: "André Simões",
       subTitle: "AAI | CFPº | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureThree.png",
+      image: "/squad-challenge/images/carouselImages/pictureThree.png",
       title: "Kelly Nascimento",
       subTitle: "AAI | CFPº | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureFour.png",
+      image: "/squad-challenge/images/carouselImages/pictureFour.png",
       title: "Adriane Castelo Branco",
       subTitle: "CEAº | CFPº | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureFive.png",
+      image: "/squad-challenge/images/carouselImages/pictureFive.png",
       title: "Elisângela Varela",
       subTitle: "AAI | CEAº | CFPº | LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureSix.png",
+      image: "/squad-challenge/images/carouselImages/pictureSix.png",
       title: "Jonathan Cantuária Lopes",
       subTitle: "AAI | CEAº | CFPº | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureSeven.png",
+      image: "/squad-challenge/images/carouselImages/pictureSeven.png",
       title: "Felipe Bertalo",
       subTitle: "AAI | CPA-20",
     },
     {
-      image: "/images/carouselImages/pictureEigth.png",
+      image: "/squad-challenge/images/carouselImages/pictureEigth.png",
       title: "Aniella Dias",
       subTitle: "AAI | CEAº | CFPº | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureNine.png",
+      image: "/squad-challenge/images/carouselImages/pictureNine.png",
       title: "Douglas Fasolai",
       subTitle: "AAI | CFA LVL II Candidate",
     },
     {
-      image: "/images/carouselImages/pictureTen.png",
+      image: "/squad-challenge/images/carouselImages/pictureTen.png",
       title: "Cíntia Falcão",
       subTitle: "AAI | CEAº | CFPº | CFA LVL I Candidate",
     },
     {
-      image: "/images/carouselImages/pictureEleven.png",
+      image: "/squad-challenge/images/carouselImages/pictureEleven.png",
       title: "Ellen Ramos",
       subTitle: "CEAº | CFPº | CFA LVL I Candidate",
     },
     {
-      image: "/images/carouselImages/pictureTwelve.png",
+      image: "/squad-challenge/images/carouselImages/pictureTwelve.png",
       title: "Janaína Cavninato",
       subTitle: "AAI | CFPº | CFA LVL I Candidate",
     },
     {
-      image: "/images/carouselImages/pictureThirteen.png",
+      image: "/squad-challenge/images/carouselImages/pictureThirteen.png",
       title: "Isaque Gomes",
       subTitle: "CEAº | CFPº | CFA LVL I Candidate",
     },
     {
-      image: "/images/carouselImages/pictureFourteen.png",
+      image: "/squad-challenge/images/carouselImages/pictureFourteen.png",
       title: "José Alfredo Teixeira",
       subTitle: "AAI | CFPº | CFA LVL I Candidate",
     },

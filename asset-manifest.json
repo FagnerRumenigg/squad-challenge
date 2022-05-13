@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/squad-challenge/static/css/main.1bfc02a4.css",
-    "main.js": "/squad-challenge/static/js/main.565cfef0.js",
+    "main.js": "/squad-challenge/static/js/main.1cf17695.js",
     "static/media/testTwo.jpg": "/squad-challenge/static/media/testTwo.f4932eda32513c0f2ab7.jpg",
     "static/media/testOne.jpg": "/squad-challenge/static/media/testOne.f51d43c96afd7852a2e1.jpg",
     "static/media/logo.svg": "/squad-challenge/static/media/logo.196353901d07e01effbda425e3975a79.svg",
@@ -19,10 +19,10 @@
     "static/media/closeQuot.svg": "/squad-challenge/static/media/closeQuot.55a08c0c1856bce4d1f0446e55d9b8dc.svg",
     "static/media/openQuot.svg": "/squad-challenge/static/media/openQuot.12ded8b50bdf43d026df27dfd11de662.svg",
     "main.1bfc02a4.css.map": "/squad-challenge/static/css/main.1bfc02a4.css.map",
-    "main.565cfef0.js.map": "/squad-challenge/static/js/main.565cfef0.js.map"
+    "main.1cf17695.js.map": "/squad-challenge/static/js/main.1cf17695.js.map"
   },
   "entrypoints": [
     "static/css/main.1bfc02a4.css",
-    "static/js/main.565cfef0.js"
+    "static/js/main.1cf17695.js"
   ]
 }
